@@ -47,19 +47,25 @@
                     </div>
                     
                     <label>If your message logs are massive, consider using a Date Range:</label>
-                    
+
+                    <div class="form-group">
+                        (Optional) Export only SMS logs for a specific 10-digit phone number (e.g., 8005550000):
+                        <input type="text" id="phone" name="phone"> <br>
+                    </div>
+
                     <div class="form-group">
                         Messages sent <strong>on and after</strong> this date:
                         <input type="text" id="from" name="from"> <br>
                        
                     </div>
+                    
                     <div class="form-group">
                         Messages send <strong>on and before</strong> this date:
                         <input type="text" id="to" name="to">
                     </div>
 
                     <div class="form-group"> 
-                        <small><strong>Note</strong>: This app outputs message logs one account at a time. If you have subaccounts you can get those logs by entering the subaccount's AccountSid and AuthToken separately and clicking the Submit button.</small>
+                        <small><strong>Note</strong>: This app outputs message logs one account at a time, or one phone number at a time. If you are exporting logs for a specific phone number, the messages sent from the number specified will appear at the top of the CSV file, and the messages sent to the number will be at the bottom, requiring you to manually sort the messages by date after they have been downloaded. If you have subaccounts you can get those logs by entering the subaccount's AccountSid and AuthToken separately and clicking the Submit button.</small>
                     </div>
                     
                     <button type="submit" class="btn btn-default">Submit</button>
